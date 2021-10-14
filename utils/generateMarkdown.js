@@ -14,18 +14,17 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ADD LICENSE BADGE
+  ## Description 
+  ${data.description}
   ## Table of Contents 
-  * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
-  * [license](#license)
+  * [Tests](#tests)
+  * [License](#license)
   * [Questions](#questions)
-  ## Description 
-  ${data.description}
   ## Installation 
-  ${data.installation}
+  In order for the application to run, the following must be installed: ${data.installation}
   ## Usage 
   ${data.usage}
   ## Contributing 
@@ -33,10 +32,10 @@ function generateMarkdown(data) {
   ## Tests 
   ${data.tests}
   ## License 
-  ${data.license}
+  This project is licensed under: ${data.license}
   ## Questions 
-  If you would like to contact me directly with questions, you can send me an email to: ${data.email}
-  You can find my GitHub profile at: https://github.com/${data.github}
+  * If you would like to contact me directly, send me an email at: ${data.email}
+  * You can find my GitHub profile at: https://github.com/${data.github}
 `;
 }
 
